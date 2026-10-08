@@ -2,6 +2,7 @@
 .gradle/
 .idea/
 .DS_Store
+agent-tools/
 build/
 captures/
 .externalNativeBuild/
