@@ -6,6 +6,14 @@ Built as a portfolio-depth presentation layer: design tokens, Canvas plotting, p
 
 [![JitPack](https://jitpack.io/v/DwanZ/compose-finance-charts.svg)](https://jitpack.io/#DwanZ/compose-finance-charts)
 
+## Screenshots
+
+Android sample — multi-series line/area, OHLC candles + volume, press for crosshair tooltips.
+
+| Overview | Line crosshair | Candles + volume |
+| :---: | :---: | :---: |
+| <img src="docs/media/finance-charts-demo.png" alt="Finance Charts sample overview" width="260" /> | <img src="docs/media/finance-charts-crosshair.png" alt="Line chart crosshair and tooltip" width="260" /> | <img src="docs/media/finance-charts-candles.png" alt="Candlestick chart with volume and tooltip" width="260" /> |
+
 ## Why this exists
 
 Most mobile portfolio pieces stop at screens wired to a backend. This repo focuses on **Compose craft**: measurement, gestures, Canvas, and a tiny public API you can drop into a market or trading UI.
