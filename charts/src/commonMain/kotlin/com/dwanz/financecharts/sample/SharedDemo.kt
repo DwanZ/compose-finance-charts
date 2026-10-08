@@ -42,15 +42,14 @@ import com.dwanz.financecharts.theme.DefaultFinanceTokens
 @Composable
 fun FinanceChartsDemo(modifier: Modifier = Modifier) {
     val tokens = DefaultFinanceTokens
-    val lineSeries = remember { SampleMarketData.lineSeries() }
-    val candles = remember { SampleMarketData.candles() }
-    var ready by remember { mutableStateOf(false) }
+    val lineSeries = remember { SampleMarketData.lineSeries(days = 36) }
+    val candles = remember { SampleMarketData.candles(days = 28) }
+    var ready by remember { mutableStateOf(true) }
     val fade by animateFloatAsState(
         targetValue = if (ready) 1f else 0f,
-        animationSpec = tween(700),
+        animationSpec = tween(300),
         label = "demoFade",
     )
-    androidx.compose.runtime.LaunchedEffect(Unit) { ready = true }
 
     MaterialTheme(
         colorScheme = darkColorScheme(

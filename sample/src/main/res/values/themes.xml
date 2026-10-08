@@ -4,5 +4,6 @@
         <item name="android:statusBarColor">#0B1218</item>
         <item name="android:navigationBarColor">#0F1419</item>
         <item name="android:windowBackground">#0F1419</item>
+        <item name="android:windowDisablePreview">true</item>
     </style>
 </resources>
